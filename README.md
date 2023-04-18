@@ -20,6 +20,13 @@ If this is your first time using the new dashboards.sh, you have to generate a c
 
 ![List of options](screenshots/capture_1.png)
 
+### Intial Steps to login to the container
+
+- ssh to your teslamate installation. `cd` to your directory where teslamate is installed (i.e. `/home/me/docker/teslamate`
+- Open a shell into the container: `docker exec -ti teslamate_grafana_1 /bin/bash`
+- Download the `dashboards.sh` script: `wget https://raw.githubusercontent.com/CarlosCuezva/dashboards-Grafana-Teslamate/main/dashboards.sh`
+- Make the script executable:`chmod 755 dashboards.sh`
+- 
 ### Option 1: Generate config file
 
 Attention! If you already had a configuration file created and you complete the wizard, it'll completely overwrite your previous configuration.
